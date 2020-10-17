@@ -24,7 +24,7 @@
             margin: 0 !important;
             font-family: 'Titillium Web', sans-serif !important;
             background-size: cover !important;
-            background: url(file:///C:/Users/iyyappan/Desktop/bg5.jpg)no-repeat;
+            background: url(images/bg4.jpg);
         }
         
         .footer {
@@ -55,6 +55,7 @@
         margin: 0 auto;
         vertical-align: middle;
         width: 100%;
+        margin-bottom: 50px;
     }
     .btn-outline-success {
         background-color: rebeccapurple;
@@ -111,6 +112,38 @@
         background: #fff;
         margin: 0 auto;
     }
+    .details_ul>li {
+        list-style: none;
+        text-align: left;
+    }
+    .imagesListRent {
+        width: 300px;
+    }
+    .details_ul {
+        padding: 0;
+    }
+    .ClickContact {
+        text-align: right;
+        margin-right: 0;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+    .agoText {
+        text-align: right;
+        /* display: inline-flex; */
+        
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: mediumvioletred !important;
+        border-color: mediumvioletred !important;
+    }
     </style>
 </head>
 
@@ -118,7 +151,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light truee">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="dashboard.html">
 
                 <!--Home Icon-->
                 <svg style="vertical-align: sub" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="rebeccapurple" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +159,13 @@
                 <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
               </svg>
                 <!--Home Icon-->
-                <span style="font-size: 25px !important;color:white">Perambalur Rent House</span>
+                <span style="font-size: 25px !important;color:white"><span style="
+                    color: mediumvioletred;
+                    font-weight: bold;
+                ">Perambalur</span><span style="font-weight: bold;color: #000;"> Rent </span> <span style="
+                    color: mediumvioletred;
+                    font-weight: bold;
+                "> House </span></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -150,24 +189,162 @@
 
             <div class="row justify-content-md-center">
 
-                <div class="col-lg-2">
+                <div class="col-lg-2" style="margin-top: 20px;font-weight: bold;">
 
-                    House House HOuse Angular React Node HTML, CSS, Bootstrap, Typesscript, NPM
+                    Filters
 
                 </div>
                 <div class="col">
-                    <div class="col">
-                        <div class="col-lg-2">
-                            <img src="images/1.jpg" />
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/1.jpg" />
                         </div>
-                        <div class="col-lg-10">
-                            <ul>
-                                <li>Details 1</li>
-                                <li>Details 2</li>
-                                <li>Details 3</li>
-                                <li>Details 4</li>
-                                <li>Details 5</li>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
                             </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/2.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/3.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/4.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/5.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/bg3.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/bg4.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 20px 0;">
+                        <div class="col-lg-4">
+                            <img class="imagesListRent" src="images/bg5.jpg" />
+                        </div>
+                        <div class="col-lg-8">
+                            <ul class="details_ul">
+                                <li>
+                                    <b>2BHK</b>
+                                    <span class="agoText">Posted 2hrs ago</span>
+                                </li>
+                                <li>Semi Furnished Home</li>
+                                <li>Apartment House</li>
+                                <li>carparking</li>
+                                <li><b>8,000</b></li>
+                                <li><a href="#">More Details...</a></li>
+                            </ul>
+                            <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
 

@@ -24,7 +24,7 @@
             margin: 0 !important;
             font-family: 'Titillium Web', sans-serif;
             background-size: cover !important;
-            background: url(file:///C:/Users/iyyappan/Desktop/bg5.jpg)no-repeat;
+            background: url(images/bg5.jpg)no-repeat;
         }
         
         .footer {
@@ -69,18 +69,14 @@
         width: 300px;
     }
     .footer_social {
-        display: flex;
         flex-wrap: nowrap;
         flex-wrap: nowrap;
         list-style: none;
         margin-right: 20px;
         margin-bottom: auto;
-        float: left;
         margin-top: 3px;
     }
     .footer_copyright {
-        display: inline-flex;
-        float: right;
         vertical-align: middle;
         margin-top: 3px;
     }
@@ -88,6 +84,7 @@
     .footer_social>li {
         list-style: none;
         margin-right: 20px;
+        display: inline-block;
     }
     .footer_copyright>li>a,
     .footer_social>li>a {
@@ -105,21 +102,30 @@
         background-color: transparent !important;
         border-bottom: 1px solid #ffffff5c !important;
     }
+    .agoText {
+        text-align: right;
+        /* display: inline-flex; */
+        
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light truee">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="dashboard.html">
 
                 <!--Home Icon-->
                 <svg style="vertical-align: sub" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="rebeccapurple" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-              </svg>
+                        <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
                 <!--Home Icon-->
                 <span style="font-size: 25px !important;color:white">Perambalur Rent House</span>
             </a>
@@ -152,25 +158,29 @@
                         <div class="col-lg-8 offset-lg-2 blackLayer">
                             <h1 style="color:#fff;margin-bottom: 20px;"> Rent House in Perambalur</h1>
                             <div style="margin-bottom: 20px;">
-                                <div style="float: none;">
+                                <div style="clear: both;">
                                     <ul class="footer_copyright" style="float:none">
                                         <li><label class="cursorPointer"><input type="radio" checked name="RL" class="mr-2"><span class="font-weight-bold mr-1">RENT</span>(House For Rent)</label></li>
                                         <li><label class="cursorPointer"><input type="radio" name="RL" class="mr-2"><span class="font-weight-bold mr-1">LEASE</span>(House for Lease)</label></li>
                                     </ul>
+                                </div>
+                                <div style="clear: both;">
                                     <ul class="footer_copyright" style="float: none;">
                                         <li><label class="mr-2 font-weight-bold">Select your Taluk</label><select style="width:150px" placeholder="taluk"><option>Taluk1</option><option>Taluk2</option>&lt;<option>Taluk3</option></select></li>
                                         <li><label class="mr-2 font-weight-bold">Select your Area</label><select style="width:150px" placeholder="area"><option>Area1</option><option>Area2</option>&lt;<option>Area3</option></select></li>
                                     </ul>
+                                </div>
+                                <div style="clear: both;">
                                     <ul class="footer_copyright">
                                         <li><label class="cursorPointer"><input type="radio" checked name="BHK" class="mr-2"><span class="font-weight-bold mr-1">1BHK</span>(1 bedroom/1 Hall/1 Kitchen)</label></li>
                                         <li><label class="cursorPointer"><input type="radio" name="BHK" class="mr-2"><span class="font-weight-bold mr-1">2BHK</span>(2 bedroom/1 Hall/1 Kitchen)</label></li>
                                         <li><label class="cursorPointer"><input type="radio" name="BHK" class="mr-2"><span class="font-weight-bold mr-1">3BHK</span>(3 bedroom/1 Hall/1 Kitchen)</label></li>
                                     </ul>
                                 </div>
-                                <button class="postandsearchBtn">Search Your Rental House</button>
+                                <div style="clear: both;"><button class="postandsearchBtn"> <a style="color:#fff;" href="list.html">Search Your Rental House</a></button></div>
                             </div>
                             <hr style="border-color: #ffffff5c;" />
-                            <div>
+                            <div style="clear: both;">
                                 <button class="postandsearchBtn">Post Your Rental Home</button>
                             </div>
                             <hr/>
@@ -198,18 +208,20 @@
 
     </section>
     <footer class="footer">
-        <ul class="footer_social" style="">
-            <li><a href="#">FB</a></li>
-            <li><a href="#">TW</a></li>
-            <li><a href="#">Insta</a></li>
-            <li><a href="#">Watsup</a></li>
-        </ul>
-        <ul class="footer_copyright" style="">
-            <li class="" style="">@copy right 2020</li>
-            <li>SUMISA COMMUNICATIONS</li>
-            <ul>
+        <div class="row">
+            <ul class="footer_social" style="">
+                <li><a href="#">FB</a></li>
+                <li><a href="#">TW</a></li>
+                <li><a href="#">Insta</a></li>
+                <li><a href="#">Watsup</a></li>
             </ul>
-        </ul>
+            <ul class="footer_copyright text-right col" style="">
+                <li class="" style="">@copy right 2020</li>
+                <li>SUMISA COMMUNICATIONS</li>
+                <ul>
+                </ul>
+            </ul>
+        </div>
     </footer>
 
 
