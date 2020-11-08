@@ -49,7 +49,7 @@
         right: 0;
     }
     .sectionMain {
-        top: 101px;
+        top: 78px;
         position: absolute;
         text-align: center;
         margin: 0 auto;
@@ -100,10 +100,10 @@
     .blackLayer {
         background-color: #000000bf;
         color: #fff;
-        padding: 20px 10px;
+        padding: 20px 10px 15px;
     }
     .navbar {
-        background-color: transparent !important;
+        background-color: #fff !important;
         border-bottom: 1px solid #ffffff5c !important;
     }
     .containerL {
@@ -121,6 +121,7 @@
     }
     .details_ul {
         padding: 0;
+        height: 140px;
     }
     .ClickContact {
         text-align: right;
@@ -143,6 +144,53 @@
         color: #fff;
         background-color: mediumvioletred !important;
         border-color: mediumvioletred !important;
+    }
+    .record {
+        border: 1px solid #eee;
+    }
+    .FilterTxt {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .Fpanel {
+        margin: 10px 0;
+    }
+    .Fpanel .head {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .Fpanel label {
+        font-size: 14px;
+        margin-right: 10px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    input[type="Radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .detailsPanel {
+        margin-left: 17.5% !important;
+    }
+    .fixedSidebar {
+        position: fixed;
+        z-index: 1;
+        max-width: 200px;
+        max-height: 640px;
+        padding: 10px 15px;
+    }
+    .whitebg {
+        background-color: #fff;
+        border: 1px solid #ddd !important;
+    }
+    .moreDetails {
+        margin-top: 16px !important;
+        line-height: 40px;
+        color: mediumvioletred;
+    }
+    .moreDetails:hover {
+        color: mediumvioletred !important;
     }
     </style>
 </head>
@@ -183,19 +231,54 @@
         </div>
     </nav>
 
-    <section class="sectionMain">
+    <section class="sectionMain text-left">
 
-        <div class="container" style="background-color: #fff;">
+        <div class="container">
 
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center" style="justify-content: unset !important;">
 
-                <div class="col-lg-2" style="margin-top: 20px;font-weight: bold;">
+                <div class="col-lg-2 fixedSidebar whitebg" style="font-weight: bold;">
 
-                    Filters
+                    <div class="FilterTxt">Filters</div>
+
+                    <div class="Fpanel">
+                        <div class="head">Rent Type</div>
+                        <label><input type="Radio" name="Rtype" checked/>Rent</label>
+                        <label><input type="Radio" name="Rtype" />Lease</label>
+                    </div>
+                    <div class="Fpanel">
+                        <div class="head">House Type</div>
+                        <label><input type="Radio" name="Htype" checked/>1BHK</label>
+                        <label><input type="Radio" name="Htype" />2BHK</label>
+                        <label><input type="Radio" name="Htype" />3BHK</label>
+                    </div>
+                    <div class="Fpanel">
+                        <div class="head">Rent Range(monthly)</div>
+                        <label>Min<input type="text" name="RentRangeHtype" checked/></label>
+                        <label>Max<input type="text" name="RentRangeHtype"  /></label>
+                    </div>
+                    <div class="Fpanel">
+                        <div class="head">Availability</div>
+                        <label><input type="Radio" name="Availtype" checked />Immediatly</label>
+                        <label><input type="Radio" name="Availtype"  />Withiin 15 days</label>
+                        <label><input type="Radio" name="Availtype"  />Within 30 days</label>
+                        <label><input type="Radio" name="Availtype"  />After 30 days</label>
+                    </div>
+                    <div class="Fpanel">
+                        <div class="head">Parking</div>
+                        <label><input type="Radio" name="Parkingtype"  checked />Yes</label>
+                        <label><input type="Radio" name="Parkingtype"  />No</label>
+                    </div>
+                    <div class="Fpanel">
+                        <div class="head">Furnishing</div>
+                        <label><input type="checkbox" name="Furnishingtype"  />Full</label>
+                        <label><input type="checkbox" name="Furnishingtype"  />Semi</label>
+                        <label><input type="checkbox" name="Furnishingtype"  />No</label>
+                    </div>
 
                 </div>
-                <div class="col">
-                    <div class="row" style="padding: 20px 0;">
+                <div class="col-lg-10 detailsPanel whitebg">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/1.jpg" />
                         </div>
@@ -209,12 +292,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/2.jpg" />
                         </div>
@@ -228,12 +312,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/3.jpg" />
                         </div>
@@ -247,12 +332,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/4.jpg" />
                         </div>
@@ -266,12 +352,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/5.jpg" />
                         </div>
@@ -285,12 +372,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/bg3.jpg" />
                         </div>
@@ -304,12 +392,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li</li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/bg4.jpg" />
                         </div>
@@ -323,12 +412,13 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
-                    <div class="row" style="padding: 20px 0;">
+                    <div class="row record" style="padding: 20px 0;">
                         <div class="col-lg-4">
                             <img class="imagesListRent" src="images/bg5.jpg" />
                         </div>
@@ -342,8 +432,9 @@
                                 <li>Apartment House</li>
                                 <li>carparking</li>
                                 <li><b>8,000</b></li>
-                                <li><a href="#">More Details...</a></li>
+                                <li></li>
                             </ul>
+                            <a href="#" class="moreDetails">More Details...</a>
                             <button class="ClickContact postandsearchBtn" style="width: auto;">Click Here to Contact</button>
                         </div>
                     </div>
